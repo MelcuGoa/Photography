@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folder Contents</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .file-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .file-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .file-name {
+            flex-grow: 1;
+        }
+        .download-button {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Folder Contents</h1>
+    <ul class="file-list">
+        <!-- Example hardcoded items; replace with server-generated content -->
+        <li class="file-item">
+            <span class="file-name">Arhiva Lansare "Interventii educationale in scoala incluziva romaneasca"</span>
+            <a class="download-button" href="docs/JPEG.rar.rar" download>Download</a>
+        </li>
+   <!--     <li class="file-item">
+            <span class="file-name">image.jpg</span>
+            <a class="download-button" href="/path/to/image.jpg" download>Download</a>
+        </li>
+        <li class="file-item">
+            <span class="file-name">document.pdf</span>
+            <a class="download-button" href="/path/to/document.pdf" download>Download</a>
+        </li> -->
+    </ul>
+</body>
+</html>
