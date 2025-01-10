@@ -15,7 +15,7 @@ Message: ${message}`;
 
     try {
       // Send the message to Gotify
-      const response = await fetch("https://gotify.imbuffering.com/message?token=AtWGxdUU74Kcnlk", {
+      const response = await fetch("https://gotify.melcu.pro/message?token=AFe9TSjLNGtCm1S", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -24,7 +24,7 @@ Message: ${message}`;
         body: JSON.stringify({
           title: "Contact Form Submission",
           message: gotifyMessage,
-          priority: 5, // Optional: Set priority (default is 0)
+          priority: 0, // Optional: Set priority (default is 0)
         }),
       });
 
