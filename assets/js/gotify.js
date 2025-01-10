@@ -15,11 +15,11 @@ Message: ${message}`;
 
     try {
       // Send the message to Gotify
-      const response = await fetch("https://gotify.imbuffering.com/message", {
+      const response = await fetch("https://gotify.imbuffering.com/message?token=AtWGxdUU74Kcnlk", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "X-Gotify-Key": "AtWGxdUU74Kcnlk", // Replace with your Gotify Application Token
+          //"X-Gotify-Key": "AtWGxdUU74Kcnlk", // Replace with your Gotify Application Token
         },
         body: JSON.stringify({
           title: "Contact Form Submission",
