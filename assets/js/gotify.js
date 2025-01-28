@@ -32,10 +32,10 @@ Message: ${message}`;
         });
 
         if (response.ok) {
-            alert("Message sent to Gotify successfully!");
+            alert("Message sent successfully!");
         } else {
             console.error("Failed to send message:", response.statusText);
-            alert("Failed to send the message to Gotify.");
+            alert("Failed to send the message.");
         }
     } catch (error) {
         console.error("Error sending message to Gotify:", error);
