@@ -8,21 +8,21 @@
     const message = document.getElementById("message").value;
 
     // Prepare the message content
-    const gotifyMessage = `New Contact Form Submission:
+    const gotifyMessage = `
 Name: ${name}
 Email: ${email}
 Message: ${message}`;
 
     try {
       // Send the message to Gotify
-      const response = await fetch("https://gotify.melcu.pro/message", {
+      const response = await fetch("https://gotify.melcu.pro/message?token=AFe9TSjLNGtCm1S", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "X-Gotify-Key": "AFe9TSjLNGtCm1S", // Replace with your Gotify Application Token
+       //   "X-Gotify-Key": "AFe9TSjLNGtCm1S", // Replace with your Gotify Application Token
         },
         body: JSON.stringify({
-          title: "Contact Form Submission",
+          title: "Mesaj nou pe photo.melcu.pro",
           message: gotifyMessage,
           priority: 0, // Optional: Set priority (default is 0)
         }),
